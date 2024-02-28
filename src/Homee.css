@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,300;1,500,600,700&display=swap');
 
 :root{
-    --bg-black-900: #f2f2fc;
+    /* --bg-black-900: #f2f2fc; */
     --bg-black-100: #fdf9ff;
-    --bg-black-50: #e8dfec;
+    /* --bg-black-50: #e8dfec; */
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
 }
@@ -105,7 +105,7 @@ ul
   left: 0;
   margin-top: 8px;
 }
-.btn{
+.btn  {
   font-size: 16px;
   font-weight: 500;
   padding: 12px 35px;
@@ -116,7 +116,23 @@ ul
   white-space: nowrap;
   background: var(--skin-color);
   transition: all 0.3s ease;
+  
 }
+
+.btn  {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 35px;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  display: inline-block;
+  white-space: nowrap;
+  background: var(--skin-color);
+  transition: all 0.3s ease;
+  
+}e
+
 .btn:hover
 {
  transform: scale(1.05); 
@@ -286,11 +302,11 @@ h3.my-profession
   margin-bottom: 70px;
   font-size: 20px;
   color: var(--text-black-700);
+ 
 }
 .home .home-img{
   flex: 0 0 40%;
   max-width: 40%;
- 
   text-align: center;
   position: relative;
 
@@ -340,8 +356,7 @@ h3.my-profession
 {
   font-size: 24px;
   margin-bottom: 15px;
-  font-weight: 700;
-  color: var(--text-black-900);
+ 
 }
 .about .about-content .about-text h3 span
 {
@@ -349,7 +364,7 @@ h3.my-profession
 }
 .about .about-content .about-text p
 {
-  font-size: 16px;
+  font-size: 19px;
   line-height: 25px;
   color: var(--text-black-700);
 }
@@ -357,7 +372,6 @@ h3.my-profession
 {
   flex: 0 0 60%;
   max-width: 60;
-  
   margin-top: 40px;
 }
 .about .about-content .personal-info .info-item
@@ -395,7 +409,6 @@ h3.my-profession
 {
   flex: 0 0 40%;
   max-width: 40;
-  
   margin-top: 40px;
 }
 .about .about-content .skills .skill-item
@@ -498,18 +511,9 @@ font-size: larger;
     height: 100%;
     left: 7px;
     top: 0;
-    /*background-color: var(--skin-color);*/
 
 }
-/*.about .about-content .timeline .circle-dot
-{
-  /*position: absolute;*/
- 
-  /*height: 100px;
-  width: 100px;
-  border-radius: 100%;
-  background-color: var(--skin-color);
-}*/
+
 
 .about .about-content .timeline .timeline-date
 {
@@ -537,7 +541,22 @@ font-size: larger;
       max-width: 100%;
       text-align: center; /* Center align text on small screens */
     }
+}
+
+@media screen and (max-width: 600px) {
+  .hello,
+  p {
+   margin: 0 auto; 
+    max-width: 87%; 
+    margin-right: 50px;
+    margin-top: 10px;
   }
+  .my-profession{
+    margin-right: 5px;
+    margin: 0 auto; 
+    max-width: 90%;
+  }
+}
   
   /* For medium screens */
   @media only screen and (min-width: 601px) and (max-width: 900px) {
@@ -559,72 +578,47 @@ font-size: larger;
   @media only screen and (max-width: 600px) {
     .btn {
       padding: 12px 10%;  /* Adjust padding for smaller screens */
-      margin-bottom: 100px;
+      margin-bottom: 0px;
+      margin-right: 50px;
+     
     }
+   .btnnnnn{
+     margin-bottom: 80px;
+   }
+   
   }
   
-  @media only screen and (min-width: 1200px) {
-    
-  }
   
   .btn:hover {
     transform: scale(1.05);
   }
 
-  @media only screen and (max-width: 600px){
-    .about section{
-       
-    }
-  }
+ 
 
-  /* -----------------------------1200-------------------------------------- */
-  /* Common styles applicable to all screen sizes */
-/* Ensure to retain existing common styles here */
-
-/* For screen sizes between 600px and 1200px */
-/* @media only screen and (min-width: 600px) and (max-width: 1200px) {
-    .aside {
-      width: 200px; 
-    }
-    .main-content {
-      padding-left: 10%; 
-      width: 80%;
-    }
-    .home .home-info,
-    .home .home-img {
+  @media only screen and (max-width: 600px) {
+    .experience,
+    .education {
       flex: 0 0 100%;
       max-width: 100%;
-      text-align: center; 
-    }
-    .btn {
-      padding: 12px 10%;
-      margin-bottom: 50px;
     }
   }
-  
- 
-  @media only screen and (min-width: 900px) and (max-width: 1200px) {
-    .main-content {
-      padding-left: 5%; 
-      width: 90%; 
-  }
-}
-  
- 
-  @media only screen and (max-width: 599px) {
-    .aside {
-      display: none; 
-    }
-    .main-content {
-      padding-left: 5%; 
-      width: 90%; 
-    }
-    .btn {
-      padding: 12px 5%; 
-    }
-  }
-   */
 
 
-   /* ================================================About================================= */
+  @media only screen and (max-width: 600px) {
+    .timeline-box {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .timeline-item .timeline-title {
+      font-size: 18px; /* Adjust font size for smaller screens */
+    }
+  
+    .timeline-item .timeline-text {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  }
+
+  
    
+  

@@ -11,7 +11,7 @@ const Home = () => {
     <div className="main container">
       <div className="aside">
         <div className="logo">
-          <a href="#"><span>Atlas</span></a>
+          <a href="#"><span>Profile</span></a>
         </div>
         <div className="nav-toggle">
           <span></span>
@@ -26,19 +26,21 @@ const Home = () => {
       </div>
 
       {/* Main content start */}
-      <div className="main-content">
+      <div className="main-content" >
         {/* Home section start */}
         <section className="home section hidden">
           <div className="container">
             <div className="row">
               <div className="home-info pdd-15">
-                <h3 className="hello">&nbsp;&nbsp;Hello, my name <span className="name">Nidhi sahu</span></h3>
-                <h3 className="my-profession">&nbsp;&nbsp;I'm a <span className="typing">Software Engineer</span></h3>
-                <p>
-                  &nbsp;&nbsp;I'm a software engineer now, I am a fresher in this field.
-                  I'm a software engineer now, I am a fresher in &nbsp;&nbsp;this field.
+                
+                <h3 className="hello" >&nbsp;&nbsp;My name is <span className="name">Nidhi sahu</span></h3>
+                <h3 className="my-profession" >&nbsp;&nbsp;I'm a <span className="typing">Software Engineer</span></h3>
+                <p style={{fontSize:'17px'}}>
+                I specialize in web development technologies including HTML, CSS, JavaScript, React.js, Next.js, Node.js, MySQL, and MongoDB. Additionally, I have expertise in mobile application development using React Native. I am passionate about technology and always eager to learn and adapt to new tools and methodologies.
                 </p>
-                <a href="/about" className="btn hire-me">&nbsp;&nbsp;About Me</a>
+                <div className='btnnnnn'>
+                <a href="/about" className="btn hire-me" >About Me</a>
+                </div>
               </div>
               <div className="home-img pdd-15">
               <img src={image} alt="Profile" />
